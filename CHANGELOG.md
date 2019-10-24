@@ -45,7 +45,7 @@ GraphQL::Auth.configure do |config|
   # config.allow_unlock_account = false
 
   # Allow custom mutations for signup and update account
-  # config.sign_up_mutation = 'Mutations::Auth::SignUp'
-  # config.update_account_mutation = 'Mutations::Auth::UpdateAccount'
+  # config.sign_up_mutation = '::Mutations::Auth::SignUp'
+  # config.update_account_mutation = '::Mutations::Auth::UpdateAccount'
 end
 ```

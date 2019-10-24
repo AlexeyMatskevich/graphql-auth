@@ -24,8 +24,8 @@ module GraphQL
         @allow_unlock_account = false
 
         # Allow custom mutations for signup and update account
-        @sign_up_mutation = 'Mutations::Auth::SignUp'
-        @update_account_mutation = 'Mutations::Auth::UpdateAccount'
+        @sign_up_mutation = '::Mutations::Auth::SignUp'
+        @update_account_mutation = '::Mutations::Auth::UpdateAccount'
       end
     end
   end
