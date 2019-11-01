@@ -2,9 +2,8 @@ module GraphQL
   module Auth
     class ResetPassword
       class << self
-        def url(token)
-          url = I18n.locale === :fr ? 'nouveau-mot-de-passe' : 'new-password'
-          "#{GraphQL::Auth.configuration.app_url}/#{I18n.locale}/#{url}/#{token}"
+        def url(token, mail)
+          "#{GraphQL::Auth.configuration.app_url}/new-password/#{token}/#{mail}"
         end
       end
     end
